@@ -1,0 +1,47 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "beautiful": "prettier --single-quote --trailing-comma all --tab-with 4 --write \"src/**/*.{js,json,scss}\"",
+    "start": "nodemon --inspect src/index.js",
+    "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trung070188/node_blog.git"
+  },
+  "keywords": [
+    "f8",
+    "blog",
+    "f8",
+    "nodejs",
+    "nodejs"
+  ],
+  "author": "trungqt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Trung070188/node_blog/issues"
+  },
+  "homepage": "https://github.com/Trung070188/node_blog#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose-delete": "^0.5.4",
+    "mongoose-slug-generator": "^1.0.4"
+  },
+  "devDependencies": {
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.5",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.1.4",
+    "morgan": "^1.10.0",
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1"
+  }
+}
